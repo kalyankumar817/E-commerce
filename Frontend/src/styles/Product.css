@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: lightcyan;
+}
+/* Navbar Container */
+.navabr-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #3b5998; /* Modern navy blue */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Brand */
+  .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff; /* White text */
+  }
+  
+  .brand:hover {
+    color: #f1c40f; /* Gold hover effect */
+    cursor: pointer;
+  }
+  
+  /* Navbar Links */
+  .navbar-links ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links ul li {
+    margin: 0 1rem;
+  }
+  
+  .navbar-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links ul li a:hover {
+    color: #f1c40f; /* Gold hover effect */
+  }
+  
+  /* Responsive Navbar */
+  @media screen and (max-width: 768px) {
+    .navabr-container {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .navbar-links ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar-links ul li {
+      margin: 0.5rem 0;
+    }
+  }
